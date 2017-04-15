@@ -18,6 +18,120 @@
 <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
 
 <style type="text/css">
+	@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		.first{
+		background-color: #b3ffff;
+		height: 1735px;
+		text-align: center;
+	}
+	.animation{
+		padding-top: 1000px;
+		font-size: 100px;
+	}
+	.animation p {
+		font-size: 90px;
+		color: #0073e6;
+	  font-family: 'Cabin Sketch', cursive;
+	  overflow: hidden;
+	  border-right: .15em solid orange;
+	  white-space: nowrap; 
+	  margin: 0 auto;
+	  letter-spacing: .15em;
+	  animation: 
+	    typing 8.5s steps(40, end),
+	    blink-caret .75s step-end infinite;
+
+	}
+
+	@keyframes typing {
+	  from { width: 0 }
+	  to { width: 100% }
+	}
+	@keyframes blink-caret {
+	  from, to { border-color: transparent }
+	  50% { border-color: white; }
+	}
+	.second , .third , .fifth{
+		background-color: #f2f2f2;
+		height: 1650px;
+		text-align: center;
+	}
+	.animated { 
+            background-repeat: no-repeat;
+            background-position: left top; 
+            padding-top:95px;
+            margin-bottom:60px;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s; 
+            -webkit-animation-fill-mode: both; 
+            animation-fill-mode: both; 
+         }
+         
+    @-webkit-keyframes bounce { 
+            0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+            40% {-webkit-transform: translateY(-30px);} 
+            60% {-webkit-transform: translateY(-15px);} 
+         } 
+         
+    @keyframes bounce { 
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+            40% {transform: translateY(-30px);} 
+            60% {transform: translateY(-15px);} 
+         }
+         
+    .bounce { 
+            -webkit-animation-name: bounce; 
+            animation-name: bounce; 
+         }
+     .start{
+     	text-align: center;
+     }
+    .fourth {
+    	background-color: #e6ffff;
+		height: 1100px;
+		text-align: center;
+      }
+    .faq-header{
+    	height: 50px;
+    	font-family: 'Indie Flower', cursive;
+    	text-decoration: underline red;
+      }
+    .faq-subheader{
+    	height: 50px;
+    	font-family: 'Indie Flower', cursive;
+    	text-shadow: 4px 4px 5px #00e6e6;
+      }
+    .faq{
+    	text-align: left;
+    	background-color: #e6f0ff;
+    	height: 100px;
+	}
+    .faq .q{
+    	font-family: 'Gloria Hallelujah', cursive;
+    	font-size: 25px;
+    }
+    .faq .ans{
+    	font-family: 'Coming Soon', cursive;
+    }
+    .faq .ans .a{
+    	background-color: #b3b3ff;
+    }
+    .navbar-fixed-top{
+    	background-color: #b3ffff; 
+    }
+    .first_button{
+    	font-family: 'Coming Soon', cursive;
+    	background-color: #66ffcc;
+    }
+    .navbar-nav  {
+    font-family: 'Coming Soon', cursive;
+    }
+	}
+	@media only screen 
+	and (min-width : 1224px) {
 	.first{
 		background-color: #b3ffff;
 		height: 770px;
@@ -49,17 +163,12 @@
 	  from, to { border-color: transparent }
 	  50% { border-color: white; }
 	}
-	/*.first_button{
-		position: relative;
-		bottom: 0;
-	}*/
 	.second , .third , .fifth{
 		background-color: #f2f2f2;
 		height: 700px;
 		text-align: center;
 	}
 	.animated { 
-            
             background-repeat: no-repeat;
             background-position: left top; 
             padding-top:95px;
@@ -126,6 +235,7 @@
     .navbar-nav  {
     font-family: 'Coming Soon', cursive;
     }
+	}	
 </style>
 <body>
 <div class="navbar-fixed-top container">
@@ -211,10 +321,7 @@
 					<p class="q">What all departments can you assist us?</p>
 					<p class="ans">Presently , Tech-related. But we are adding up new fields as we are growing .</p>
 				</div><hr>
-				<div class="faq">
-					<p class="q">What all departments can you assist us?</p>
-					<p class="ans">Presently , Tech-related. But we are adding up new fields as we are growing .</p>
-				</div><hr>
+			
 				<div class="faq">
 					<p class="q">Are you accepting volunteers?</p>
 					<p class="ans">Yes ,we will love to have volunteers. Please shoot us a mail at internsultant@gmail.com. </p>
@@ -243,6 +350,6 @@
 
 
 
-<script type="text/javascript" src="/index.js"></script>
+<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
